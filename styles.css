@@ -86,7 +86,7 @@ body {
 
 .section-2 {
   background-color: var(--bg-color-lighter-section);
-  height: max(320px 30%);
+  height: max(320px, 30%);
   box-shadow: 3px 2px 5px 2px #dcddde;
 }
 
