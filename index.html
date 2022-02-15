@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+    <title></title>
+  </head>
+  <body>
+    <div class="left-content-container">
+      <div class="banner"><p>Odin</p></div>
+      <p class="citation">
+        Photo by
+        <a href="https://unsplash.com/@peter_mc_greats">Pietro De Grandi</a>
+      </p>
+    </div>
+    <div class="right-content-container">
+      <section class="section-1">
+        <div class="content-container">
+          <p>
+            This is not a real service! You know you need something like this in
+            your life to help you realize your deepest dreams. Sign up
+            <span class="italic">now</span> to get started.
+          </p>
+          <p>You <span class="italic">know</span> you want to.</p>
+        </div>
+      </section>
+
+      <section class="section-2">
+        <div class="content-container">
+          <h2>Let's do this!</h2>
+          <form id="right-section-form" action="">
+            <div class="row">
+              <div class="input-container">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" />
+              </div>
+              <div class="input-container">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-container">
+                <label for="email">Email</label>
+                <input placeholder="email@domain.com" type="email" id="email" />
+              </div>
+              <div class="input-container">
+                <label for="phone-number">Phone Number</label>
+                <input
+                  pattern="[0-9]{3}[-][0-9]{3}[-][0-9]{4}"
+                  title="Please enter your number in the form of 555-555-5555."
+                  placeholder="xxx-xxx-xxxx"
+                  type="tel"
+                  id="phone-number"
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-container">
+                <label for="password">Password</label>
+                <input placeholder=" " type="password" id="password" required />
+                <span class="error" aria-live="polite"
+                  >* Passwords do not match.</span
+                >
+              </div>
+              <div class="input-container">
+                <label for="confirm-password">Confirm Password</label>
+                <input
+                  placeholder=" "
+                  type="password"
+                  id="confirm-password"
+                  required
+                />
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+      <section class="section-3">
+        <div class="content-container">
+          <button
+            type="submit"
+            form="right-section-form"
+            class="create-account-btn"
+          >
+            Create Account
+          </button>
+          <p class="login-text">
+            Already have an account? <a href="#">Log in</a>
+          </p>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
+
+<!-- <section>
+        <p>
+          This is not a real online service! You know you need something like
+          this in your life to help you realize your deepest dreams.
+        </p>
+        <p>You know you want to.</p>
+      </section>
+      <form action=""></form>
+      <section></section> -->

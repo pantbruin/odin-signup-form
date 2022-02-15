@@ -1,0 +1,175 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color-darker-section: #f9fafb;
+  --bg-color-lighter-section: #ffffff;
+  --button-color: #e67e37;
+  font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+}
+
+@font-face {
+  font-family: Norse;
+  src: url(fonts/Norse-Bold.otf);
+}
+
+h2 {
+  color: #343d49;
+  padding-top: 15px;
+  margin-bottom: 40px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.left-content-container {
+  background-image: url(img/lake.jpg);
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  width: 40vw;
+}
+
+.citation {
+  color: #ffffff;
+  font-size: 0.8rem;
+  position: absolute;
+  bottom: 5px;
+  left: 35%;
+}
+
+.citation > a {
+  color: inherit;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.banner {
+  display: flex;
+  font-size: 6rem;
+  color: #ffffff;
+  justify-content: center;
+  align-items: center;
+  font-family: Norse;
+  height: 15%;
+  width: 100%;
+  position: absolute;
+  top: 160px;
+  opacity: 10;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.right-content-container {
+  background-color: var(--bg-color-darker-section);
+  height: 100vh;
+  width: 60vw;
+}
+
+.section-1 {
+  font-weight: 600;
+  font-size: 1.4rem;
+  margin-top: 120px;
+  margin-bottom: 55px;
+}
+
+.content-container {
+  width: 75%;
+  margin-left: 50px;
+}
+
+.section-2 {
+  background-color: var(--bg-color-lighter-section);
+  height: 35%;
+  box-shadow: 3px 2px 5px 2px #dcddde;
+}
+
+/* .section-2 > .content-container {
+  padding-top: 3px;
+} */
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.row:last-child {
+  margin-bottom: 0;
+}
+
+.input-container {
+  position: relative;
+}
+
+label {
+  color: #48505b;
+  font-weight: 600;
+  font-size: 0.7rem;
+  position: absolute;
+  text-transform: uppercase;
+  top: -17px;
+  letter-spacing: 0.08rem;
+}
+
+input {
+  margin-right: 150px;
+  width: 75%;
+  height: 30px;
+  border: 1px solid #e5e7eb;
+  border-radius: 3px;
+}
+
+input:focus {
+  outline: 1px solid blue;
+  box-shadow: 2px 2px 5px 2px #dcddde;
+}
+
+input:invalid {
+  outline: 1px solid red;
+}
+
+.error {
+  font-size: 0.7rem;
+  color: red;
+  position: absolute;
+  display: none;
+}
+
+/*
+.row > input:last-child {
+  margin-right: 0;
+} */
+
+.section-3 {
+  margin-top: 40px;
+  font-size: 1.1rem;
+}
+
+.login-text > a {
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--button-color);
+}
+
+.create-account-btn {
+  position: relative;
+  font-size: 1rem;
+  font-weight: 700;
+  background-color: var(--button-color);
+  border: 0;
+  border-radius: 10px;
+  width: 200px;
+  height: 50px;
+}
+
+.create-account-btn:active {
+  top: 1px;
+  box-shadow: 2px 2px 5px 2px #dcddde;
+}
